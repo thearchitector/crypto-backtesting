@@ -1,12 +1,10 @@
 [tool.poetry]
 name = "crypto_backtesting"
-version = "0.1.0"
+version = "0.1.1"
 description = "Trading strategy backtesting library for crypto."
 authors = ["Elias Gabriel <me@eliasfgabriel.com>"]
 license = "BSD-3-Clause"
-packages = [
-  {include = "crypto_backtesting/py.typed"},
-]
+include = ["crypto_backtesting/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
