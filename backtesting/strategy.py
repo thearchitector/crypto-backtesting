@@ -7,6 +7,11 @@ Wallet = List[float]
 
 
 class Strategy(ABC):
+    """
+    Base class used to create different trading strategies. Custom preprocessing or
+    initialization should happen in `__init__` after calling `super()`.
+    """
+
     def __init__(self, rates: Dict[str, pandas.DataFrame], coins: Dict[str, int]):
         self.rates = rates
         self.coins = coins

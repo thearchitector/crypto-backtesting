@@ -1,10 +1,15 @@
 [tool.poetry]
-name = "crypto_backtesting"
-version = "0.1.1"
-description = "Trading strategy backtesting library for crypto."
+name = "crypto-backtesting"
+version = "1.0.0"
+description = "Specialized trading strategy backtesting library for crypto."
 authors = ["Elias Gabriel <me@eliasfgabriel.com>"]
 license = "BSD-3-Clause"
-include = ["crypto_backtesting/py.typed"]
+packages = [ { include = "backtesting" } ]
+include = ["backtesting/py.typed"]
+documentation = "https://backcrypto.thearchitector.dev"
+repository = "https://github.com/thearchitector/crypto-backtesting"
+readme = "README.md"
+keywords = ["cryptocurrency", "data", "finance", "backtesting", "science"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -14,7 +19,6 @@ numpy = "^1.22.3"
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.1"
 pdoc = "^10.0.4"
-matplotlib = "^3.5.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
